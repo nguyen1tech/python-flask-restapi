@@ -16,6 +16,5 @@ class BaseTestCase(TestCase):
         db.session.commit()
 
     def tearDown(self):
-        print("-------------")
         db.session.remove()
         db.drop_all()
